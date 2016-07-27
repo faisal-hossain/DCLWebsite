@@ -123,6 +123,21 @@ jQuery(function($) {
 			navigationText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"]
 		});
 
+		//Presets
+		var presets = $('.style-chooser ul li');
+
+		$('.style-chooser .toggler').on('click', function(event){
+			event.preventDefault();
+			$(this).closest('.style-chooser').toggleClass('opened');
+		});
+
+		$('.style-chooser ul li a').on('click', function(event){
+			event.preventDefault();
+			presets.removeClass('active');
+			$(this).parent().addClass('active');
+			$('#css-preset').removeAttr('href').attr('href', 'css/presets/preset' + $(this).parent().data('preset') + '.css');
+		});
+
 		
 	
 });
