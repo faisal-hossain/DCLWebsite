@@ -30,6 +30,33 @@
 	.btn-signup {
 		padding: 10px 20px;
 	}
+	#contact-us .heading {
+		padding-top: 35px;
+	}
+	.contact-info {
+		padding-left: 0;
+	}
+	.contact .nav-tabs li {
+		display: inline-block;
+		margin: 0 25px;
+	}
+	.contact .nav-tabs li .fa {
+		background: #0aabe1;
+		text-align: center;
+		border-radius: 50%;
+		color: #fff;
+		font-size: 14px;
+		height: 32px;
+		line-height: 2;
+		width: 32px;
+	}
+	section.contact {
+		padding-top: 145px;
+	}
+	.sub-head{
+		display: block;
+		margin-top: 20px;
+	}
 }
 
 /* xs */
@@ -38,11 +65,13 @@
 		font-size: 14px;
 	}
 	#home-slider .caption h1 {
-		font-size: 40px;
+		font-size: 24px;
+		letter-spacing: 5px;
 	}
-	#home-slider .caption {
-		font-size: 15px;
-		padding: 0 30px;
+	#home-slider .caption p {
+		color: #fff;
+		font-weight: 300;
+		font-size: 20px;
 	}
 	.left-control, .right-control {
 		font-size: 20px;
@@ -116,8 +145,8 @@
 		width: 90px;
 	}
 	.about-info {
-		text-align: center;
-		margin-bottom: 50px;
+		text-align: justify;
+		margin-bottom: 0;
 	}
 	.team-member {
 		margin-bottom: 50px;
@@ -173,45 +202,33 @@
 		margin-bottom: 40px;
 		padding: 20px;
 	}
-	#twitter {
-		padding-bottom: 75px;
-	}
-	.twitter-left-control, 
-	.twitter-right-control {
-		top: inherit;
-		bottom: 30px;
-		height: 25px;
-		width: 25px;
-		line-height: 23px;
-		font-size: 14px;
-	}
-	.twitter-left-control {
-		left: 40%
-	} 
-	.twitter-right-control {
-		right: 40%
-	}
-	#blog {
-		overflow: hidden;
-	}
-	.entry-header h2 {
-		line-height: 20px;
-	}
-	.blog-posts .col-sm-4 {
-		margin-bottom: 35px;
-	}
-	.load-more {
-		margin-top: 35px;
-	}
-	.btn-loadmore {
-		font-size: 12px;
-		padding: 15px 75px;
-	}
+	
 	#contact-us .heading {
 		padding-top: 35px;
 	}
 	.contact-info {
 		padding-left: 0;
+	}
+	.contact .nav-tabs li {
+		display: inline-block;
+		margin: 0 5px;
+	}
+	.contact .nav-tabs li .fa {
+		background: #0aabe1;
+		text-align: center;
+		border-radius: 50%;
+		color: #fff;
+		font-size: 14px;
+		height: 32px;
+		line-height: 2;
+		width: 32px;
+	}
+	section.contact {
+		padding-top: 145px;
+	}
+	.sub-head{
+		display: block;
+		margin-top: 20px;
 	}
 	#footer .footer-bottom {
 		text-align: center;
@@ -233,6 +250,36 @@
 	}
 	button.navbar-toggle {
 		margin: 23px;
+	}
+
+	#home-slider .caption h1 {
+		font-size: 24px;
+		letter-spacing: 5px;
+	}
+	#home-slider .caption p {
+		color: #fff;
+		font-weight: 300;
+		font-size: 20px;
+	}
+	.contact .nav-tabs li {
+		display: inline-block;
+		margin: 0 5px;
+	}
+	section.contact {
+		padding-top: 145px;
+	}
+	.contact .nav-tabs li .fa {
+		background: #0aabe1;
+		text-align: center;
+		border-radius: 50%;
+		color: #fff;
+		font-size: 14px;
+		height: 32px;
+		line-height: 2;
+		width: 32px;
+	}
+	.sub-head{
+		display: block;
 	}
 
 	
