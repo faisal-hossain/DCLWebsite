@@ -110,6 +110,11 @@
 		padding-bottom: 8px;
 		padding-top: 10px;
 	}
+	#portfolio .portfolio-filter li a {
+		font-size: 12px;
+		text-transform: capitalize;
+		padding: 5px
+	}
 
 	/*services*/
 	section {
@@ -117,7 +122,6 @@
 	}
 	.heading {
 		font-size: 14px;
-		padding-bottom: 45px;
 	}
 	.heading h2 {
 		font-size: 26px;
