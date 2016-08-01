@@ -60,51 +60,66 @@ jQuery(function($) {
 	
 	//Initiat WOW JS
 	new WOW().init();
+
 	//smoothScroll
 	smoothScroll.init();
 
 
-	//Pretty Photo
-	 $("a[data-gallery^='prettyPhoto']").prettyPhoto({
-	  social_tools: false
-	 });
+    /*====================================
+    Portfolio Isotope Filter
+    ======================================*/
+    $(window).load(function() {
+        var $container = $('#itemsWork , #itemsWorkTwo, #itemsWorkThree');
+        $container.isotope({
+            filter: '* , all',
+            animationOptions: {
+                duration: 750,
+                easing: 'linear',
+                queue: false
+            }
+        });
+        $('.cat a').click(function() {
+            $('.cat .active').removeClass('active');
+            $(this).addClass('active');
+            var selector = $(this).attr('data-filter');
+            $container.isotope({
+                filter: selector,
+                animationOptions: {
+                    duration: 750,
+                    easing: 'linear',
+                    queue: false
+                }
+            });
+            return false;
+        });
 
-	// portfolio filter
-		//  $(window).load(function(){'use strict',
-		//  	$portfolio_selectors = $('.portfolio-filter >li>a');
-		//  	if($portfolio_selectors!='undefined'){
-		//  		$portfolio = $('.portfolio-items');
-		//  		$portfolio.isotope({
-		//  			itemSelector : '.col-sm-3',
-		//  			layoutMode : 'fitRows'
-		//  		});
-				
-		//  		$portfolio_selectors.on('click', function(){
-		//  			$portfolio_selectors.removeClass('active');
-		//  			$(this).addClass('active');
-		//  			var selector = $(this).attr('data-filter');
-		//  			$portfolio.isotope({ filter: selector });
-		//  			return false;
-		//  		});
-		//  	}
-		//  });
+    });
 
-		
+    /*====================================
+    Nivo Lightbox 
+    ======================================*/
+    // Agency Portfolio Popup
+    $('#itemsWork a , #itemsWorkTwo a , #itemsWorkThree a , #popup a').nivoLightbox({
+            effect: 'slideDown',  
+            keyboardNav: true,                            
+        });
 
-		//Presets
-		var presets = $('.style-chooser ul li');
 
-		$('.style-chooser .toggler').on('click', function(event){
-			event.preventDefault();
-			$(this).closest('.style-chooser').toggleClass('opened');
-		});
 
-		$('.style-chooser ul li a').on('click', function(event){
-			event.preventDefault();
-			presets.removeClass('active');
-			$(this).parent().addClass('active');
-			$('#css-preset').removeAttr('href').attr('href', 'css/presets/preset' + $(this).parent().data('preset') + '.css');
-		});
+	//Presets
+	var presets = $('.style-chooser ul li');
+
+	$('.style-chooser .toggler').on('click', function(event){
+		event.preventDefault();
+		$(this).closest('.style-chooser').toggleClass('opened');
+	});
+
+	$('.style-chooser ul li a').on('click', function(event){
+		event.preventDefault();
+		presets.removeClass('active');
+		$(this).parent().addClass('active');
+		$('#css-preset').removeAttr('href').attr('href', 'css/presets/preset' + $(this).parent().data('preset') + '.css');
+	});
 
 		
 	

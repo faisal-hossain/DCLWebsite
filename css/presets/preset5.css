@@ -9,11 +9,6 @@ a,
   color: #913d88;
 }
 
-.btn.btn-primary:hover,
-.btn-submit:hover {
-  background-color: #6d2e66
-}
-
 a:hover, a:focus {
 	color: #6d2e66;
 }
@@ -35,20 +30,4 @@ a:hover, a:focus {
 .right-control:hover, 
 .folio-overview a:hover {
   background-color:#913d88;
-}
-
-.twitter-left-control:hover, 
-.twitter-right-control:hover, 
-.btn-loadmore:hover  {
-	border: 1px solid #913d88;
-}
-
-.caption .btn-start:hover, 
-.left-control:hover, 
-.right-control:hover {
-	border-color: #913d88;
-}
-
-.twitter-icon .fa-twitter:after {
-	border-color: #913d88 transparent transparent;
 }

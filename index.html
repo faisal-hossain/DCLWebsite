@@ -6,21 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="author" content="">
-
   <title>DCL</title>
-
   <link rel="stylesheet" href="css/bootstrap.min.css" >
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/animate.min.css"> 
-  <link rel="stylesheet" href="css/prettyPhoto.css">
+  <!-- Nivo Lightbox ================================================== -->
+  <link rel="stylesheet" href="css/nivo-lightbox.css" >
+  <link rel="stylesheet" href="css/nivo_lightbox_themes/default/default.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/presets/preset1.css" id="css-preset" >
   <link rel="stylesheet" href="css/responsive.css">
 
-  <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
-  <![endif]-->
+  <!--[if lt IE 9]> 
+    <script src="js/html5shiv.js"></script> 
+	  <script src="js/respond.min.js"></script> 
+  <![endif]--> 
   
   <link rel="shortcut icon" href="images/favicon.ico">
 
@@ -44,14 +44,14 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="index.html">
-            <img class="img-responsive" src="images/logo.png" alt="DCL">
+            <img class="img-responsive" src="images/logo.png" alt="DCL" width="179" height="60">
           </a>                    
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">                 
             <li class="scroll active"><a href="#home">Home</a></li>
             <li class="scroll"><a href="#portfolio">Portfolio</a></li>             
-            <li class="scroll"><a href="#about-us">About</a></li> 
+            <li class="scroll"><a href="#about-us">About</a></li>  
             <li class="scroll"><a href="#contact">Contact</a></li>       
           </ul>
         </div>
@@ -86,6 +86,7 @@
  
 
   <section id="portfolio">
+
     <div class="container">
       <div class="row">
 
@@ -98,174 +99,138 @@
 
         </div>
 
+        <div class="text-center">
+            <ul class="list-inline cat"> <!-- Portfolio Filter Categories -->
+                <li><a href="#" data-filter="*" class="active">All</a></li>
+                <li><a href="#" data-filter=".web">Web</a></li>
+                <li><a href="#" data-filter=".brand">Branding</a></li>
+                <li><a href="#" data-filter=".app">Apps</a></li>
+                <li><a href="#" data-filter=".others">Others</a></li>
+            </ul><!-- End Portfolio Filter Categories -->
+        </div>
+
       </div> 
     </div>
-    <div class="container">
-      <div class="row">
-        
-        <ul class="portfolio-filter">
-					<li><a class="btn btn-default active" href="#" data-filter="*">All</a></li>
-					<li><a class="btn btn-default" href="" data-filter=".aec">AEC CAD Services</a></li>
-					<li><a class="btn btn-default" href="" data-filter=".gis">GIS Layer</a></li>
-					<li><a class="btn btn-default" href="" data-filter=".av">Architectural Vizualization</a></li>
-					<li><a class="btn btn-default" href="" data-filter=".cgd">Computer Graphic Design</a></li>
-				</ul><!--/#portfolio-filter-->
-				<div class="portfolio-items">
-					<div class="col-sm-3 col-xs-12 col-md-3 portfolio-item aec">
-						<div class="view efffect">
-							<div class="portfolio-image">
-								<img src="images/portfolio/1.jpg" alt=""></div> 
-								<div class="mask text-center">
-									<h3>Novel</h3>
-									<h4>Lorem ipsum dolor sit amet consectetur</h4>
-									<a href="#"><i class="fa fa-link"></i></a>
-									<a href="images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-3 col-xs-12 col-md-3 portfolio-item av">
-							<div class="view efffect" >
-								<div class="portfolio-image">
-									<img src="images/portfolio/2.jpg" alt="">
-								</div> 
-								<div class="mask text-center">
-									<h3>Novel</h3>
-									<h4>Lorem ipsum dolor sit amet consectetur</h4>
-									<a href="#"><i class="fa fa-link"></i></a>
-									<a href="images/portfolio/big-item4.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-3 col-xs-12 col-md-3 portfolio-item gis">
-							<div class="view efffect">
-								<div class="portfolio-image">
-									<img src="images/portfolio/3.jpg" alt="">
-								</div> 
-								<div class="mask text-center">
-								<h3>Novel</h3>
-								<h4>Lorem ipsum dolor sit amet consectetur</h4>
-								<a href="#"><i class="fa fa-link"></i></a>
-								<a href="images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3 col-xs-12 col-md-3 portfolio-item cgd">
-						<div class="view efffect">
-							<div class="portfolio-image">
-								<img src="images/portfolio/4.jpg" alt="">
-							</div> 
-							<div class="mask text-center">
-								<h3>Novel</h3>
-								<h4>Lorem ipsum dolor sit amet consectetur</h4>
-								<a href="#"><i class="fa fa-link"></i></a>
-								<a href="images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3 col-xs-12 col-md-3 portfolio-item aec">
-						<div class="view efffect">
-							<div class="portfolio-image">
-								<img src="images/portfolio/5.jpg" alt="">
-							</div> <div class="mask text-center">
-							<h3>Novel</h3>
-							<h4>Lorem ipsum dolor sit amet consectetur</h4>
-							<a href="#"><i class="fa fa-link"></i></a>
-							<a href="images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-3 col-xs-12 col-md-3 portfolio-item gis">
-					<div class="view efffect">
-						<div class="portfolio-image">
-							<img src="images/portfolio/6.jpg" alt="">
-						</div> 
-						<div class="mask text-center">
-							<h3>Novel</h3>
-							<h4>Lorem ipsum dolor sit amet consectetur</h4>
-							<a href="#"><i class="fa fa-link"></i></a>
-							<a href="images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-3 col-xs-12 col-md-3 portfolio-item aec">
-					<div class="view efffect">
-						<div class="portfolio-image">
-							<img src="images/portfolio/7.jpg" alt="">
-						</div> 
-						<div class="mask text-center">
-							<h3>Novel</h3>
-							<h4>Lorem ipsum dolor sit amet consectetur</h4>
-							<a href="#"><i class="fa fa-link"></i></a>
-							<a href="images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-3 col-xs-12 col-md-3 portfolio-item av">
-					<div class="view efffect">
-						<div class="portfolio-image">
-							<img src="images/portfolio/8.jpg" alt=""></div> 
-							<div class="mask text-center">
-								<h3>Novel</h3>
-								<h4>Lorem ipsum dolor sit amet consectetur</h4>
-								<a href="#"><i class="fa fa-link"></i></a>
-								<a href="images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3 col-xs-12 col-md-3 portfolio-item aec">
-						<div class="view efffect">
-							<div class="portfolio-image">
-								<img src="images/portfolio/9.jpg" alt="">
-							</div> 
-							<div class="mask text-center">
-								<h3>Novel</h3>
-								<h4>Lorem ipsum dolor sit amet consectetur</h4>
-								<a href="#"><i class="fa fa-link"></i></a>
-								<a href="images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3 col-xs-12 col-md-3 portfolio-item gis">
-						<div class="view efffect">
-							<div class="portfolio-image">
-								<img src="images/portfolio/10.jpg" alt=""></div> 
-								<div class="mask text-center">
-									<h3>Novel</h3>
-									<h4>Lorem ipsum dolor sit amet consectetur</h4>
-									<a href="#"><i class="fa fa-link"></i></a>
-									<a href="images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-3 col-xs-12 col-md-3 portfolio-item av">
-							<div class="view efffect">
-								<div class="portfolio-image">
-									<img src="images/portfolio/11.jpg" alt=""></div> 
-									<div class="mask text-center">
-										<h3>Novel</h3>
-										<h4>Lorem ipsum dolor sit amet consectetur</h4>
-										<a href="#"><i class="fa fa-link"></i></a>
-										<a href="images/portfolio/big-item3.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-3 col-xs-12 col-md-3 portfolio-item cgd">
-								<div class="view efffect">
-									<div class="portfolio-image">
-										<img src="images/portfolio/12.jpg" alt=""></div> 
-										<div class="mask text-center">
-											<h3>Novel</h3>
-											<h4>Lorem ipsum dolor sit amet consectetur</h4>
-											<a href="#"><i class="fa fa-link"></i></a>
-											<a href="images/portfolio/big-item4.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
 
-      </div>
-    </div>
+    <div class="container-fluid"> <!-- fluid container -->
+      <div id="itemsWork" class="row text-center"> <!-- Portfolio Wrapper Row -->
+
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nopadding brand others"> <!-- Works #1 col 3 -->
+            <div class="box"> 
+                <div class="hover-bg">
+                    <div class="hover-text off">
+                        <a title="Logo Identity Design" href="images/portfolio/01@2x.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/01@2x.jpg">
+                            <i class="fa fa-expand"></i>
+                        </a>
+                        <a href="#"><i class="fa fa-chain"></i></a> <!-- change # with your url to link it to another page -->
+                    </div> 
+                    <img src="images/portfolio/01.jpg" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
+                </div>
+            </div>
+        </div><!-- end Works #1 col 3 -->
+
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nopadding apps"> <!-- Works #2 col 3 -->
+            <div class="box">
+                <div class="hover-bg">
+                    <div class="hover-text off">
+                        <a title="Mobile Application" href="images/portfolio/02@2x.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/02@2x.jpg">
+                            <i class="fa fa-expand"></i>
+                        </a>
+                        <a href="#"><i class="fa fa-chain"></i></a><!-- change # with your url to link it to another page -->
+                    </div>
+                    <img src="images/portfolio/02.jpg" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
+                </div>
+            </div>
+        </div><!-- end Works #2 col 3 -->
+
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nopadding others brand"><!-- Works #3 col 3 -->
+            <div class="box">
+                <div class="hover-bg">
+                    <div class="hover-text off">
+                        <a title="Freedom Project #1" href="images/portfolio/03@2x.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/03@2x.jpg">
+                            <i class="fa fa-expand"></i>
+                        </a>
+                        <a href="#"><i class="fa fa-chain"></i></a><!-- change # with your url to link it to another page -->
+                    </div>
+                    <img src="images/portfolio/03.jpg" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
+                </div>
+            </div>
+        </div><!-- end Works #3 col 3 -->
+
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nopadding others web"> <!-- Works #4 col 3 -->
+            <div class="box">
+                <div class="hover-bg">
+                    <div class="hover-text off">
+                        <a title="Freedom Project #1" href="images/portfolio/04@2x.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/04@2x.jpg">
+                            <i class="fa fa-expand"></i>
+                        </a>
+                        <a href="#"><i class="fa fa-chain"></i></a><!-- change # with your url to link it to another page -->
+                    </div>
+                    <img src="images/portfolio/04.jpg" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
+                </div>
+            </div>
+        </div> <!-- end Works #4 col 3 -->
+
+        <div class="col-xs-12 col-sm-6 col-md-3 nopadding web others"> <!-- Works #5 col 3 -->
+            <div class="box">
+                <div class="hover-bg">
+                    <div class="hover-text off">
+                        <a title="Freedom Project #1" href="images/portfolio/05@2x.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/05@2x.jpg">
+                            <i class="fa fa-expand"></i>
+                        </a>
+                        <a href="#"><i class="fa fa-chain"></i></a><!-- change # with your url to link it to another page -->
+                    </div>
+                    <img src="images/portfolio/05.jpg" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
+                </div>
+            </div>
+        </div> <!-- end Works #5 col 3 -->
+
+        <div class="col-xs-12 col-sm-6 col-md-3 nopadding app">  <!-- Works #6 col 3 -->
+            <div class="box">
+                <div class="hover-bg">
+                    <div class="hover-text off">
+                        <a title="Freedom Project #1" href="images/portfolio/06@2x.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/06@2x.jpg">
+                            <i class="fa fa-expand"></i>
+                        </a>
+                        <a href="#"><i class="fa fa-chain"></i></a><!-- change # with your url to link it to another page -->
+                    </div>
+                    <img src="images/portfolio/06.jpg" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
+                </div>
+            </div>
+        </div><!-- end Works #6 col 3 -->
+
+        <div class="col-xs-12 col-sm-6 col-md-3 nopadding web brand"><!-- Works #7 col 3 -->
+            <div class="box">
+                <div class="hover-bg">
+                    <div class="hover-text off">
+                        <a title="Freedom Project #1" href="images/portfolio/07@2x.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/07@2x.jpg">
+                            <i class="fa fa-expand"></i>
+                        </a>
+                        <a href="#"><i class="fa fa-chain"></i></a><!-- change # with your url to link it to another page -->
+                    </div>
+                    <img src="images/portfolio/07.jpg" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
+                </div>
+            </div>
+        </div><!-- end Works #7 col 3 -->
+
+        <div class="col-xs-12 col-sm-6 col-md-3 nopadding app"> <!-- Works #8 col 3 -->
+            <div class="box"> 
+                <div class="hover-bg">
+                    <div class="hover-text off">
+                        <a title="Freedom Project #1" href="images/portfolio/08@2x.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/08@2x.jpg">
+                            <i class="fa fa-expand"></i>
+                        </a>
+                        <a href="#"><i class="fa fa-chain"></i></a><!-- change # with your url to link it to another page -->
+                    </div>
+                    <img src="images/portfolio/08.jpg" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
+                </div> 
+            </div>
+        </div> <!-- end Works #8 col 3 -->
+        
+    </div> <!-- End Row -->
+
+    </div> <!-- End Container-Fluid -->
+
 
     
 
@@ -302,7 +267,7 @@
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
           <div class="vimeo-video">
-            <img class="img-responsive" src="https://placehold.it/500x350">
+            <img class="img-responsive" src="http://placehold.it/500x350">
           </div>
         </div>
       </div>
@@ -460,7 +425,7 @@
             <p>&copy; 2016 Digital Construction Limited | Your Backoffice Partner.</p>
           </div>
           <div class="col-sm-6">
-            <p class="pull-right">Designed by <a href="#">Adaptive Enterprise Limited.</a></p>
+            <p class="pull-right">Designed by <a href="">Adaptive Enterprise Limited.</a></p>
           </div>
         </div>
       </div>
@@ -485,11 +450,18 @@
   </div>
   <!-- Color scheme -->
 
-  <script type="text/javascript" src="js/jquery.js"></script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/wow.min.js"></script>
-  <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
-  <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script> 
+
+  <!-- Portfolio Filter -->
+    <script type="text/javascript" src="js/jquery.isotope.js"></script>
+
+    <!-- LightBox Nivo -->
+    <script type="text/javascript" src="js/nivo-lightbox.min.js"></script>
+
   <script type="text/javascript" src="js/mousescroll.js"></script>
   <script type="text/javascript" src="js/smoothscroll.js"></script>
   <script src="js/typed.js"></script>
