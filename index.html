@@ -32,58 +32,57 @@
   <div class="preloader"> <i class="fa fa-circle-o-notch fa-spin"></i></div>
   <!--/.preloader-->
 
-  <header id="home">
-
-    <div class="main-nav">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">
-            <img class="img-responsive" src="images/logo.png" alt="DCL" width="179" height="60">
-          </a>                    
-        </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">                 
-            <li class="scroll active"><a href="#home">Home</a></li>
-            <li class="scroll"><a href="#portfolio">Portfolio</a></li>             
-            <li class="scroll"><a href="#about-us">About</a></li>  
-            <li class="scroll"><a href="#contact">Contact</a></li>       
-          </ul>
-        </div>
-      </div>
-    </div><!--/#main-nav-->
-
-    <div id="home-slider" class="carousel-fade" data-ride="carousel">
-
-      <div class="carousel-inner">
-        <div class="item active" style="background-image: url(images/slider/2.jpg)">
-          <div class="caption">
-            <h1 class="animated fadeInLeftBig">Introducing <span>DCL</span></h1>
-            <div class="blink">
-              <p class="animated fadeInRightBig"><span id="head-title"></span></p>
+  <!-- Main Navigation 
+    ================================================== -->
+    <nav id="tf-menu" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"><img src="images/logo.png" alt="..."></a>
             </div>
-          </div>
-          <div class="caption-btn">
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="">Download Brochure</a>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="">Contact Us</a>
-          </div>
-        </div>
-      </div>
 
-      <a id="tohash" href="#portfolio"><i class="fa fa-angle-down"></i></a>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#tf-home" class="scroll">Home</a></li>
+                <li><a href="#portfolio" class="scroll">Portfolio</a></li>                
+                <li><a href="#about-us" class="scroll">About</a></li>
+                <li><a href="#contact" class="scroll">Contact</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
 
-    </div><!--/#home-slider-->
-    
-  </header><!--/#home-->
+    <!-- Home Section
+    ================================================== -->
+    <div id="tf-home">
+        <div class="overlay"> <!-- Overlay Color -->
+            <div class="container"> <!-- container -->
+                <div class="content-heading text-center"> <!-- Input Your Home Content Here -->
+                  <div class="caption">
+                    <h1 class="animated fadeInLeftBig">Introducing <span>DCL</span></h1>
+                    <div class="blink">
+                      <p class="animated fadeInRightBig"><span id="head-title"></span></p>
+                    </div>
+                  </div>
+                  <div class="caption-btn">
+                    <a data-scroll class="btn btn-start animated fadeInUpBig" href="">Download Brochure</a>
+                    <a data-scroll class="btn btn-start animated fadeInUpBig" href="">Contact Us</a>
+                  </div>
+
+                  <a id="tohash" href="#portfolio"><i class="fa fa-angle-down"></i></a>
+
+                </div><!-- End Input Your Home Content Here -->
+            </div> <!-- end container -->
+        </div><!-- End Overlay Color -->
+    </div>
   
- 
-
- 
 
   <section id="portfolio">
 
@@ -230,9 +229,6 @@
     </div> <!-- End Row -->
 
     </div> <!-- End Container-Fluid -->
-
-
-    
 
   </section>
   <!--/#portfolio-->
@@ -392,7 +388,7 @@
           </div>
         </div>
         <div class="text-center">
-             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3440.932825217217!2d-97.92142138541521!3d30.409647708183726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865b30e3c6cf39f3%3A0x9e4efbc00b8357ef!2s5011+McCormick+Mountain+Dr%2C+Austin%2C+TX+78734%2C+USA!5e0!3m2!1sen!2sbd!4v1469531025985" width="1170" height="268" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div id="map"></div>
         </div>
       </div>
     </div>  
@@ -479,6 +475,9 @@
   
 
   <script type="text/javascript" src="js/main.js"></script>
+
+  <!-- GOOGLE MAP -->
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
 
   
 

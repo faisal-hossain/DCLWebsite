@@ -41,6 +41,9 @@
 		display: block;
 		margin-top: 20px;
 	}
+	.img-responsive{
+		width: 100%
+	}
 }
 
 /* xs */
@@ -48,14 +51,11 @@
 	body {
 		font-size: 14px;
 	}
-	#home-slider .caption h1 {
-		font-size: 24px;
-		letter-spacing: 5px;
-	}
-	#home-slider .caption p {
-		color: #fff;
-		font-weight: 300;
-		font-size: 20px;
+	.caption h1 {
+		letter-spacing: 10px;
+		margin-bottom: 15px;
+		font-size: 30px;
+		padding-top: 15px;
 	}
 	.navbar-header {
 		min-height: 80px;
@@ -71,7 +71,7 @@
 	}
 
 	.navbar-toggle .icon-bar {
-	  background-color: #fff;
+	  background-color: #fff !important;
 	}
 	.navbar-right li a {
 		font-size: 13px;
@@ -82,6 +82,9 @@
 		font-size: 12px;
 		text-transform: capitalize;
 		padding: 5px
+	}
+	.img-responsive{
+		width: 100%
 	}
 
 	
@@ -134,6 +137,28 @@
 
 /* XS Portrait */
 @media (max-width: 479px) {
+
+	.caption h1 {
+		letter-spacing: 5px;
+		font-size: 24px;
+	}
+
+	.caption p {
+		font-size: 18px;
+	}
+
+	.caption-btn .btn-start {
+		font-size: 12px;
+		padding: 10px 10px;
+	}
+
+	ul.cat li{
+		padding: 0px
+	}
+
+	ul.cat li a:hover, ul.cat li a:focus, ul.cat li a.active{
+		padding: 5px 10px;
+	}
    
 	#portfolio .col-sm-3 {
 		width:100%;
@@ -141,16 +166,6 @@
 	}
 	button.navbar-toggle {
 		margin: 23px;
-	}
-
-	#home-slider .caption h1 {
-		font-size: 24px;
-		letter-spacing: 5px;
-	}
-	#home-slider .caption p {
-		color: #fff;
-		font-weight: 300;
-		font-size: 20px;
 	}
 	.contact .nav-tabs li {
 		display: inline-block;

@@ -107,12 +107,44 @@ section {
 /*************************
 ********Home CSS**********
 **************************/
-#home-slider {
-  overflow: hidden;
-  position: relative;
-}
 
-#home-slider .caption {
+#tf-menu {
+    margin-bottom: 0;
+    background-color: #028fcc;
+    height: auto;
+    border-bottom: none
+}
+.navbar-brand img {
+    width: auto;
+    margin:10px 0px
+}
+.navbar-brand { 
+  float: left;
+  padding: 0
+}
+.navbar-nav > li > a {
+  color: #fff !important;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.navbar-default .navbar-nav > li > a.active,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    background-color: rgba(0,0,0,.2);
+    color: #fff;
+}
+.navbar-default .navbar-toggle { border-color: transparent }
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus { background-color: transparent }
+.navbar-default .navbar-toggle:hover>.navbar-default .navbar-toggle .icon-bar,
+.navbar-default .navbar-toggle:focus>.navbar-default .navbar-toggle .icon-bar { color: #FFCC33 }
+
+
+/* Header Page */
+.caption {
   position: absolute;
   top: 50%;
   margin-top: -104px;
@@ -126,7 +158,7 @@ section {
   color: #fff;
 }
 
-#home-slider .caption-btn {
+.caption-btn {
   position: absolute;
   bottom: 30%;
   margin-top: -104px;
@@ -141,7 +173,7 @@ section {
 }
 
 
-#home-slider .caption h1 {
+.caption h1 {
   color: #fff;
   font-weight: 700;
   letter-spacing: 10px;
@@ -149,7 +181,7 @@ section {
   font-size: 60px;
 }
 
-#home-slider .caption p {
+.caption p {
   color: #fff;
   font-weight: 300;
   font-size: 30px
@@ -166,31 +198,7 @@ section {
   margin-top: 40px;
 }
 
-
-.carousel-fade .carousel-inner .item {
-  opacity: 0;
-  -webkit-transition-property: opacity;
-  transition-property: opacity;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 2037px;
-}
-
-.carousel-fade .carousel-inner .item:after {
-  content: " ";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0,0,0,.7);
-}
-
-.carousel-fade .carousel-inner .active {
-  opacity: 1;
-}
-
-#home-slider .fa-angle-down {
+.fa-angle-down {
   position: absolute;
   left: 50%;
   bottom: 50px;
@@ -205,27 +213,59 @@ section {
   animation: bounce 3000ms infinite;
 }
 
-.navbar-right li a {
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 400;
-  padding-top: 30px;
-  padding-bottom: 30px;
+#tf-header {
+    padding: 20px 0;
+    background: #ffcc33;
+    margin-top: 70px;
+    color: #ffffff;
 }
-
-.navbar-right li a:hover {
-  background-color: rgba(0,0,0,.2);
-  color: #fff;
+#tf-header .breadcrumb {
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: transparent;
+    border-radius: 4px;
+    margin-left: -10px;
+    margin-top: -10px;
 }
-
-.navbar-brand {
-    float: left;
-    padding: 0;
+#tf-header .breadcrumb > li + li:before {
+    padding: 0 5px;
+    color: #FFF;
+    content: "/\00a0";
 }
-
-.navbar-brand img{
-  margin:10px 0px;
+#tf-header .breadcrumb > li a { color: #ffffff }
+/* Home Style */
+#tf-home {
+    background: url(../images/slider/2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #cfcfcf;
+}
+#tf-home .overlay {
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.8)), color-stop(17%,rgba(0,0,0,0.73)), color-stop(35%,rgba(0,0,0,0.66)), color-stop(62%,rgba(0,0,0,0.55)), color-stop(100%,rgba(0,0,0,0.4))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* W3C */
+    padding: 20% 0;
+    background-attachment: fixed;
+    min-height: 100%;
+}
+#tf-home h1 { color: #ffcc33 }
+.content-heading p.lead { margin-bottom: 80px }
+a.goto-btn {
+    font-size: 18px;
+    font-weight: 700;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0;
+    transition: all 0.5s;
+}
+a.goto-btn:hover {
+    color: #ffffff;
+    border-bottom: 2px solid #ffcc33;
 }
 
 
@@ -686,6 +726,14 @@ section.contact > .container {
   background: #0aabe1;
   color: #fff;
 } 
+
+    /* ==========================================================================
+Google Map Style
+========================================================================== */
+#map {
+  width: 100%;
+  height: 400px;
+}
 
 
 
